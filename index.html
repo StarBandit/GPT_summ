@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarization App</title>
+</head>
+<body>
+    <h1>Text Summarization App</h1>
+    <form method="POST">
+        <label for="input_text">Input Text:</label><br>
+        <textarea name="input_text" rows="5" cols="50">{{ input_text }}</textarea><br>
+        <button type="submit">Generate Summary</button>
+    </form>
+    {% if summary %}
+    <h2>Generated Summary:</h2>
+    <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
